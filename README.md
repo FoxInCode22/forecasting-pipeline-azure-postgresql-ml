@@ -34,8 +34,6 @@ The test serves as a blueprint for IoT telemetry prediction, demand forecasting,
 
 * Scalable workflow: Easily replace dataset or model for new time-series sources.
 
-* Azure ML integration: Optional dataset registration for experiment tracking and retraining pipelines.
-
 * Reproducible artifacts: Trained model, scaler, and forecast outputs stored in /outputs
 
 <b> Architecture </b>
@@ -55,11 +53,6 @@ The test serves as a blueprint for IoT telemetry prediction, demand forecasting,
         │  Modeling                │
         │  - Prophet               │
         │  - LSTM (Keras)          │
-        └──────────┬───────────────┘
-                   ▼
-        ┌──────────────────────────┐
-        │  Azure ML Integration    │
-        │  (Dataset Registration)  │
         └──────────┬───────────────┘
                    ▼
         ┌──────────────────────────┐
